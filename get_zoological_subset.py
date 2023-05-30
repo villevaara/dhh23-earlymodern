@@ -9,6 +9,6 @@ bot_list = bot_img.tolist()
 botfiles = ["/scratch/project_2007773/early_modern/illustration/" + f for f in bot_list]
 
 
-with zipfile.ZipFile('zoological_ill.zip', 'w') as zipMe:
+with zipfile.ZipFile('/scratch/project_2007773/early_modern/zoological_ill.zip', 'w') as zipMe:
     for file in tqdm(botfiles):
         zipMe.write(file, compress_type=zipfile.ZIP_DEFLATED)
