@@ -13,5 +13,5 @@ for category in list(set(new_clip['Category'])):
     catfiles = ["/scratch/project_2007773/early_modern/illustration/" + f for f in cat_list]
     for file in tqdm(catfiles):
         src_path = file
-        dst_path = "/scratch/project_2007773/early_modern/illustration/" + category + "/" + file.split('/')[-1]
+        dst_path = "/scratch/project_2007773/early_modern/ill_copy_new_clip/" + category + "/" + file.split('/')[-1]
         shutil.copy(src_path, dst_path)
