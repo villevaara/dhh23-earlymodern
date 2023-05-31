@@ -5,7 +5,7 @@ import shutil
 
 
 # merged_df = pd.read_csv("data/merged_all.csv", dtype={"ecco_id": str, "page_id": str})
-new_clip = pd.read_csv("data/new_clip_classification.csv")
+new_clip = pd.read_csv("/scratch/project_2007773/early_modern/new_clip_classification.csv")
 
 for category in list(set(new_clip['Category'])):
     cat_img = new_clip[new_clip['Category'] == category]['Image']
